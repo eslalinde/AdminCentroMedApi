@@ -3,6 +3,19 @@
   "texts": {
     "Menu:Home": "Home",
     "Welcome": "Welcome",
-    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io."
+    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io.",
+    "Permission:Country": "Country",
+    "Permission:Create": "Create",
+    "Permission:Update": "Update",
+    "Permission:Delete": "Delete",
+    "Menu:Country": "MenuCountry",
+    "Country": "Country",
+    "CountryName": "CountryName",
+    "CountryCode": "CountryCode",
+    "CountryNormalizeName": "CountryNormalizeName",
+    "CreateCountry": "CreateCountry",
+    "EditCountry": "EditCountry",
+    "CountryDeletionConfirmationMessage": "Are you sure to delete the country {0}?",
+    "SuccessfullyDeleted": "Successfully deleted"
   }
 }

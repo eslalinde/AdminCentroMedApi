@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Volo.Abp.AuditLogging.EntityFrameworkCore;
 using Volo.Abp.BackgroundJobs.EntityFrameworkCore;
 using Volo.Abp.Data;
@@ -12,6 +12,8 @@ using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.TenantManagement;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
+using AdminCentroMed.Locations;
+using Volo.Abp.EntityFrameworkCore.Modeling;
 
 namespace AdminCentroMed.EntityFrameworkCore;
 
@@ -51,6 +53,7 @@ public class AdminCentroMedDbContext :
     public DbSet<TenantConnectionString> TenantConnectionStrings { get; set; }
 
     #endregion
+    public DbSet<Country> Countries { get; set; }
 
     public AdminCentroMedDbContext(DbContextOptions<AdminCentroMedDbContext> options)
         : base(options)
@@ -81,5 +84,15 @@ public class AdminCentroMedDbContext :
         //    b.ConfigureByConvention(); //auto configure for the base class props
         //    //...
         //});
+
+
+        builder.Entity<Country>(b =>
+        {
+            b.ToTable(AdminCentroMedConsts.DbTablePrefix + "Countries", AdminCentroMedConsts.DbSchema);
+            b.ConfigureByConvention(); 
+            
+
+            /* Configure more properties here */
+        });
     }
 }

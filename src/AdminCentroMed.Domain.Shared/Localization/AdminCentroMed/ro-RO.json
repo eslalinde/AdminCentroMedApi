@@ -3,6 +3,19 @@
   "texts": {
     "Menu:Home": "Acasă",
     "Welcome": "Bun venit",
-    "LongWelcomeMessage": "Bun venit la aplicaţie. Acesta este un proiect de pornire bazat pe framework-ul ABP. Pentru mai multe informaţii, vizitaţi, visit abp.io."
+    "LongWelcomeMessage": "Bun venit la aplicaţie. Acesta este un proiect de pornire bazat pe framework-ul ABP. Pentru mai multe informaţii, vizitaţi, visit abp.io.",
+    "Permission:Country": "Country",
+    "Permission:Create": "Create",
+    "Permission:Update": "Update",
+    "Permission:Delete": "Delete",
+    "Menu:Country": "MenuCountry",
+    "Country": "Country",
+    "CountryName": "CountryName",
+    "CountryCode": "CountryCode",
+    "CountryNormalizeName": "CountryNormalizeName",
+    "CreateCountry": "CreateCountry",
+    "EditCountry": "EditCountry",
+    "CountryDeletionConfirmationMessage": "Are you sure to delete the country {0}?",
+    "SuccessfullyDeleted": "Successfully deleted"
   }
 }
