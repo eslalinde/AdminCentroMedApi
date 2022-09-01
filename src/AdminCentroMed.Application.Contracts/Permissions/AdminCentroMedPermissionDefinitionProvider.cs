@@ -8,11 +8,9 @@ public class AdminCentroMedPermissionDefinitionProvider : PermissionDefinitionPr
 {
     public override void Define(IPermissionDefinitionContext context)
     {
-        var myGroup = context.AddGroup(AdminCentroMedPermissions.GroupName);
-        //Define your own permissions here. Example:
-        //myGroup.AddPermission(AdminCentroMedPermissions.MyPermission1, L("Permission:MyPermission1"));
+        var masterDataGroup = context.AddGroup(AdminCentroMedPermissions.GroupName, L("Permission:MasterData"));
 
-        var countryPermission = myGroup.AddPermission(AdminCentroMedPermissions.Country.Default, L("Permission:Country"));
+        var countryPermission = masterDataGroup.AddPermission(AdminCentroMedPermissions.Country.Default, L("Permission:Country"));
         countryPermission.AddChild(AdminCentroMedPermissions.Country.Create, L("Permission:Create"));
         countryPermission.AddChild(AdminCentroMedPermissions.Country.Update, L("Permission:Update"));
         countryPermission.AddChild(AdminCentroMedPermissions.Country.Delete, L("Permission:Delete"));
