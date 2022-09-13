@@ -45,6 +45,7 @@ public class AdminCentroMedEntityFrameworkCoreModule : AbpModule
                  * default repositories only for aggregate roots */
             options.AddDefaultRepositories(includeAllEntities: true);
             options.AddRepository<Country, CountryRepository>();
+            options.AddRepository<State, StateRepository>();
         });
 
         Configure<AbpDbContextOptions>(options =>

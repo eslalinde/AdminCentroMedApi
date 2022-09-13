@@ -16,6 +16,15 @@
     "CreateCountry": "CreateCountry",
     "EditCountry": "EditCountry",
     "CountryDeletionConfirmationMessage": "Are you sure to delete the country {0}?",
-    "SuccessfullyDeleted": "Successfully deleted"
+    "SuccessfullyDeleted": "Successfully deleted",
+    "Permission:State": "State",
+    "Menu:State": "MenuState",
+    "State": "State",
+    "StateName": "StateName",
+    "StateNormalizeName": "StateNormalizeName",
+    "StateCountryId": "StateCountryId",
+    "CreateState": "CreateState",
+    "EditState": "EditState",
+    "StateDeletionConfirmationMessage": "Are you sure to delete the state {0}?"
   }
 }

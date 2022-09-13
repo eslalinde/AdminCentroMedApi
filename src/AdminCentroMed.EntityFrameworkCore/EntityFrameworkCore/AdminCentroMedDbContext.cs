@@ -42,6 +42,7 @@ public class AdminCentroMedDbContext :
 
     //Identity
     public DbSet<IdentityUser> Users { get; set; }
+
     public DbSet<IdentityRole> Roles { get; set; }
     public DbSet<IdentityClaimType> ClaimTypes { get; set; }
     public DbSet<OrganizationUnit> OrganizationUnits { get; set; }
@@ -50,15 +51,17 @@ public class AdminCentroMedDbContext :
 
     // Tenant Management
     public DbSet<Tenant> Tenants { get; set; }
+
     public DbSet<TenantConnectionString> TenantConnectionStrings { get; set; }
 
-    #endregion
+    #endregion Entities from the modules
+
     public DbSet<Country> Countries { get; set; }
+    public DbSet<State> States { get; set; }
 
     public AdminCentroMedDbContext(DbContextOptions<AdminCentroMedDbContext> options)
         : base(options)
     {
-
     }
 
     protected override void OnModelCreating(ModelBuilder builder)
@@ -78,19 +81,23 @@ public class AdminCentroMedDbContext :
 
         /* Configure your own tables/entities inside here */
 
-        //builder.Entity<YourEntity>(b =>
-        //{
-        //    b.ToTable(AdminCentroMedConsts.DbTablePrefix + "YourEntities", AdminCentroMedConsts.DbSchema);
-        //    b.ConfigureByConvention(); //auto configure for the base class props
-        //    //...
-        //});
-
-
         builder.Entity<Country>(b =>
         {
             b.ToTable(AdminCentroMedConsts.DbTablePrefix + "Countries", AdminCentroMedConsts.DbSchema);
-            b.ConfigureByConvention(); 
-            
+            b.ConfigureByConvention();
+            b.Property(x => x.Name).IsRequired().HasMaxLength(250);
+            b.Property(x => x.NormalizeName).HasMaxLength(250);
+            b.Property(x => x.Code).IsRequired().HasMaxLength(2);
+
+            /* Configure more properties here */
+        });
+
+        builder.Entity<State>(b =>
+        {
+            b.ToTable(AdminCentroMedConsts.DbTablePrefix + "States", AdminCentroMedConsts.DbSchema);
+            b.ConfigureByConvention();
+            b.Property(x => x.Name).IsRequired().HasMaxLength(250);
+            b.Property(x => x.NormalizeName).HasMaxLength(250);
 
             /* Configure more properties here */
         });

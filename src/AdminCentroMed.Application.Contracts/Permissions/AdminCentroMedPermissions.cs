@@ -11,4 +11,12 @@ public static class AdminCentroMedPermissions
         public const string Create = Default + ".Create";
         public const string Delete = Default + ".Delete";
     }
+
+    public class State
+    {
+        public const string Default = GroupName + ".State";
+        public const string Update = Default + ".Update";
+        public const string Create = Default + ".Create";
+        public const string Delete = Default + ".Delete";
+    }
 }
