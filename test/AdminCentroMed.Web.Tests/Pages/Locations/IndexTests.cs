@@ -14,7 +14,7 @@ public class Index_Tests : AdminCentroMedWebTestBase
         // Arrange
 
         // Act
-        var response = await GetResponseAsStringAsync("/Country");
+        var response = await GetResponseAsStringAsync("/State");
 
         // Assert
         response.ShouldNotBeNull();

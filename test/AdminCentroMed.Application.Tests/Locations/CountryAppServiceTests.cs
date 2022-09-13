@@ -50,7 +50,7 @@ public class CountryAppServiceTests : AdminCentroMedApplicationTestBase
     }
 
     [Fact]
-    public async Task Should_Not_Create_A_Book_Without_Name()
+    public async Task Should_Not_Create_A_Country_Without_Name()
     {
         var exception = await Assert.ThrowsAsync<AbpValidationException>(async () =>
         {

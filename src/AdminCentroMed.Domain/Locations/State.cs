@@ -33,4 +33,18 @@ public class State : Entity<Guid>, IMultiTenant
 
         NormalizeName = normalizeName ?? name.NormalizeString();
     }
+
+    public State(
+        Guid id,
+        Guid? tenantId,
+        string name,
+        string normalizeName,
+        Guid countryId
+    ) : base(id)
+    {
+        TenantId = tenantId;
+        Name = name;
+        NormalizeName = normalizeName;
+        CountryId = countryId;
+    }
 }

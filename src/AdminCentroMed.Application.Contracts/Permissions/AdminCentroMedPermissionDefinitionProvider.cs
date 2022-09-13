@@ -14,6 +14,11 @@ public class AdminCentroMedPermissionDefinitionProvider : PermissionDefinitionPr
         countryPermission.AddChild(AdminCentroMedPermissions.Country.Create, L("Permission:Create"));
         countryPermission.AddChild(AdminCentroMedPermissions.Country.Update, L("Permission:Update"));
         countryPermission.AddChild(AdminCentroMedPermissions.Country.Delete, L("Permission:Delete"));
+
+        var statePermission = masterDataGroup.AddPermission(AdminCentroMedPermissions.State.Default, L("Permission:State"));
+        statePermission.AddChild(AdminCentroMedPermissions.State.Create, L("Permission:Create"));
+        statePermission.AddChild(AdminCentroMedPermissions.State.Update, L("Permission:Update"));
+        statePermission.AddChild(AdminCentroMedPermissions.State.Delete, L("Permission:Delete"));
     }
 
     private static LocalizableString L(string name)

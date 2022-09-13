@@ -18,6 +18,15 @@
     "CreateCountry": "Crear Pais",
     "EditCountry": "Editar Pais",
     "CountryDeletionConfirmationMessage": "Esta seguro que quiere eliminar el pais {0}?",
-    "SuccessfullyDeleted": "Eliminado correctamente"
+    "SuccessfullyDeleted": "Eliminado correctamente",
+    "Permission:State": "Departamento",
+    "Menu:State": "Departamentos",
+    "State": "Departamento",
+    "StateName": "Nombre",
+    "StateNormalizeName": "Nombre Normalizado",
+    "StateCountryId": "Country Id",
+    "CreateState": "Crear Departamento",
+    "EditState": "Editar Departamento",
+    "StateDeletionConfirmationMessage": "Esta seguro que quiere eliminar el departamento {0}?"
   }
 }
