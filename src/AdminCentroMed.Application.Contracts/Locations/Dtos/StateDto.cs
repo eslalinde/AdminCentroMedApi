@@ -11,4 +11,6 @@ public class StateDto : EntityDto<Guid>
     public string NormalizeName { get; set; }
 
     public Guid CountryId { get; set; }
+
+    public string CountryName { get; set; }
 }

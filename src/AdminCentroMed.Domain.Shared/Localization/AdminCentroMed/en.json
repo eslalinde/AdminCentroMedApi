@@ -24,7 +24,8 @@
     "State": "State",
     "StateName": "Name",
     "StateNormalizeName": "Normalize Name",
-    "StateCountryId": "CountryId",
+    "StateCountryId": "Country Id",
+    "StateCountryName": "Country Name",
     "CreateState": "Create State",
     "EditState": "Edit State",
     "StateDeletionConfirmationMessage": "Are you sure to delete the state {0}?"

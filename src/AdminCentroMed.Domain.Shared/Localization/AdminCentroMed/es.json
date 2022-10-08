@@ -24,7 +24,8 @@
     "State": "Departamento",
     "StateName": "Nombre",
     "StateNormalizeName": "Nombre Normalizado",
-    "StateCountryId": "Country Id",
+    "StateCountryId": "Pais Id",
+    "StateCountryName": "Nombre Pais",
     "CreateState": "Crear Departamento",
     "EditState": "Editar Departamento",
     "StateDeletionConfirmationMessage": "Esta seguro que quiere eliminar el departamento {0}?"

@@ -24,7 +24,7 @@ public class StateAppServiceTests : AdminCentroMedApplicationTestBase
     {
         //Act
         var result = await _stateAppService.GetListAsync(
-            new PagedAndSortedResultRequestDto()
+            new FilterResultRequestDto()
         );
 
         //Assert

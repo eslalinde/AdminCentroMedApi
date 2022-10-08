@@ -12,8 +12,10 @@ public class AdminCentroMedApplicationAutoMapperProfile : Profile
          * Alternatively, you can split your mapping configurations
          * into multiple profile classes for a better organization. */
         CreateMap<Country, CountryDto>();
+        CreateMap<Country, CountryLookupDto>();
         CreateMap<CreateUpdateCountryDto, Country>(MemberList.Source);
         CreateMap<State, StateDto>();
+        CreateMap<State, StateLookupDto>();
         CreateMap<CreateUpdateStateDto, State>(MemberList.Source);
     }
 }
