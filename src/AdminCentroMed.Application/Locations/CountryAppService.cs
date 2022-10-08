@@ -59,9 +59,9 @@ public class CountryAppService : CrudAppService<Country, CountryDto, Guid, Filte
     {
         if (sorting.IsNullOrEmpty())
         {
-            return $"country.{nameof(Country.Name)}";
+            return $"{nameof(Country.Name)}";
         }
 
-        return $"country.{sorting}";
+        return $"{sorting}";
     }
 }
