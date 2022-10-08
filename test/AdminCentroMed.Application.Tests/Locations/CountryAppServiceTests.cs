@@ -23,7 +23,7 @@ public class CountryAppServiceTests : AdminCentroMedApplicationTestBase
     {
         //Act
         var result = await _countryAppService.GetListAsync(
-            new PagedAndSortedResultRequestDto()
+            new FilterResultRequestDto()
         );
 
         //Assert
